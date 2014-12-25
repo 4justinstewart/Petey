@@ -1,0 +1,18 @@
+<div class="mailer">
+  <h2>-- Happy <%= Time.now.strftime('%A') %> Gang --</h2>
+
+  <div>
+    <p>Today's Pete of the Day is ...</p>
+    <h1><%= @word.capitalize %> Pete</h1>
+    <br><br>
+    <%= link_to "Not Sure Who This Pete Is?", "https://en.wiktionary.org/wiki/#{@word.downcase}#English", target: "_blank" %>
+  </div>
+
+  <div>
+    <%= image_tag "petey.png" %>
+  </div>
+
+  <p>Much Love,<br>🙈 The People Behind Petey 🙊</p>
+
+  <h6>Disclaimer: It is impossible to unsubscribe from these emails.  Enjoy 😋</h6>
+</div>
